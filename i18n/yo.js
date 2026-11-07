@@ -420,5 +420,6 @@ HL_I18N("yo", {
 "441":"Ìtàn ìdààmú aláìnísinmi",
 "442":"Ìtàn ìdààmú nípa ojú ọjọ́",
 "443":"A dúpẹ́ pé o kàn sí Halcyon Literary House. A ti gba ìbéèrè ìgbìmọ̀ rẹ, ọ̀kan lára ẹgbẹ́ wa yóò sì dá ọ lóhùn láàrin ọjọ́ iṣẹ́ méjì. Bí o bá fẹ́ fi ohunkóhun kún un, kọ̀wé sí wa ní hello@halcyonliterary.com.",
-"444":"A dúpẹ́ pé o béèrè fún Àtẹ Ìdàgbàsókè fún Àwọn Òǹkọ̀wé Aládàáṣe. O lè gbà á sílẹ̀ níbí: https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf. Nígbà tí o bá ṣe tán láti sọ̀rọ̀ nípa ìwé rẹ, béèrè fún ìgbìmọ̀ ní https://halcyonliterary.com/contact.html."
+"444":"A dúpẹ́ pé o béèrè fún Àtẹ Ìdàgbàsókè fún Àwọn Òǹkọ̀wé Aládàáṣe. O lè gbà á sílẹ̀ níbí: https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf. Nígbà tí o bá ṣe tán láti sọ̀rọ̀ nípa ìwé rẹ, béèrè fún ìgbìmọ̀ ní https://halcyonliterary.com/contact.html.",
+"445":"A kò lè fi ifiranṣẹ rẹ ránṣẹ́. Jọ̀wọ́ gbìyànjú lẹ́ẹ̀kan sí i láìpẹ́, tàbí kọ̀wé sí wa tààrà ní hello@halcyonliterary.com."
 });

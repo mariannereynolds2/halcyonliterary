@@ -282,18 +282,19 @@
     <input type="hidden" name="_captcha" value="false">
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_autoresponse" value="Thank you for contacting Halcyon Literary House. We have received your consultation request, and a member of our team will reply within two business days. If you would like to add anything, write to us at hello@halcyonliterary.com." data-say="Thank you for contacting Halcyon Literary House. We have received your consultation request, and a member of our team will reply within two business days. If you would like to add anything, write to us at hello@halcyonliterary.com.">
-    <input type="hidden" name="language" value="English" data-lang-field>
-    <input type="hidden" name="form" value="Consultation request">
+    <input type="hidden" name="Language they read the site in" value="English" data-lang-field>
+    <input type="hidden" name="Form" value="Consultation request">
     <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
     <div class="form-row">
-      <div class="field"><label for="brief-home-name">Your name</label><input id="brief-home-name" type="text" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="brief-home-name">Your name</label><input id="brief-home-name" type="text" name="Name" autocomplete="name" required></div>
       <div class="field"><label for="brief-home-email">Email address</label><input id="brief-home-email" type="email" name="email" autocomplete="email" required></div>
     </div>
-    <div class="field"><label for="brief-home-book">Book title and genre</label><input id="brief-home-book" type="text" name="book" required></div>
-    <div class="field"><label for="brief-home-stage">Where is your book today?</label><select id="brief-home-stage" name="stage" required><option>Writing or editing</option><option>Preparing to publish</option><option>Published, but hard to discover</option><option>Planning a launch or relaunch</option><option>Building long-term growth</option></select></div>
-    <div class="field"><label for="brief-home-tried">What have you tried so far? <span class="optional">(optional)</span></label><textarea id="brief-home-tried" name="previous_work"></textarea></div>
-    <div class="field"><label for="brief-home-goal">What would success look like for this book?</label><textarea id="brief-home-goal" name="goal" required></textarea></div>
+    <div class="field"><label for="brief-home-book">Book title and genre</label><input id="brief-home-book" type="text" name="Book title and genre" required></div>
+    <div class="field"><label for="brief-home-stage">Where is your book today?</label><select id="brief-home-stage" name="Where the book is today" required><option value="Writing or editing">Writing or editing</option><option value="Preparing to publish">Preparing to publish</option><option value="Published, but hard to discover">Published, but hard to discover</option><option value="Planning a launch or relaunch">Planning a launch or relaunch</option><option value="Building long-term growth">Building long-term growth</option></select></div>
+    <div class="field"><label for="brief-home-tried">What have you tried so far? <span class="optional">(optional)</span></label><textarea id="brief-home-tried" name="What they have tried so far"></textarea></div>
+    <div class="field"><label for="brief-home-goal">What would success look like for this book?</label><textarea id="brief-home-goal" name="What success would look like" required></textarea></div>
     <button class="btn btn-primary" type="submit" data-sending="Sending your request…">Request a consultation</button>
+    <p class="form-error" role="alert" hidden>Your message could not be sent. Please try again in a moment, or write to us directly at hello@halcyonliterary.com.</p>
     <p class="form-note">Every request is read by our team. We reply within two business days.</p>
   </form>
   <div class="form-done" aria-live="polite">

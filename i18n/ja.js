@@ -420,5 +420,6 @@ HL_I18N("ja", {
 "441":"サスペンス・スリラー",
 "442":"気候スリラー",
 "443":"Halcyon Literary House にご連絡いただきありがとうございます。ご相談のお申し込みを受け付けました。2営業日以内にチームの担当者よりご返信します。追加でお伝えになりたいことがあれば、hello@halcyonliterary.com までお送りください。",
-"444":"「インディー作家のための成長ロードマップ」をお申し込みいただきありがとうございます。こちらからダウンロードいただけます：https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf 。ご自身の本についてご相談の際は、https://halcyonliterary.com/contact.html からお申し込みください。"
+"444":"「インディー作家のための成長ロードマップ」をお申し込みいただきありがとうございます。こちらからダウンロードいただけます：https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf 。ご自身の本についてご相談の際は、https://halcyonliterary.com/contact.html からお申し込みください。",
+"445":"メッセージを送信できませんでした。しばらくしてからもう一度お試しいただくか、hello@halcyonliterary.com まで直接ご連絡ください。"
 });

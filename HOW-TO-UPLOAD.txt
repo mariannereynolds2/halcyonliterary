@@ -90,6 +90,10 @@ FORMS  (one step needed after upload!)
   - Press Reply in your inbox and your answer goes straight to the author.
   - The author automatically receives a confirmation email in their language.
     Roadmap requests also receive the download link by email.
+  - The thank-you message only appears once FormSubmit confirms it accepted
+    the message. If sending fails, the visitor sees a clear message asking them
+    to try again or email hello@halcyonliterary.com directly, so no enquiry is
+    silently lost.
   The FIRST time someone submits a form, FormSubmit sends an activation email
   to hello@halcyonliterary.com. Open it and click "Activate Form". Until you do,
   messages are not delivered. Best: submit a test request yourself right after
@@ -105,6 +109,7 @@ GOOGLE AND SHARING
 
 
 THE ROADMAP PDF
-  The download button points to:  assets/indie-author-growth-roadmap.pdf
-  Put your PDF in the assets folder with exactly that name, or open js/site.js
-  and change the "roadmapPdf" line near the top to match your file's name.
+  Included: assets/indie-author-growth-roadmap.pdf (22 pages). Visitors receive
+  it on the Roadmap page right after entering their name and email, and the
+  confirmation email links to it as well. To replace it later, upload a new PDF
+  with exactly the same file name.

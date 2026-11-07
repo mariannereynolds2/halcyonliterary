@@ -575,3 +575,7 @@ html.i18n-loading body { visibility: hidden; }
 .work-desc { color: var(--on-dark-muted); }
 .work-go { font-weight: 600; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--kingfisher-lt); }
 @media (max-width: 640px) { .work { grid-template-columns: 1fr; } .work-covers img { width: 70px; } }
+
+/* form error */
+.form-error { margin: 4px 0 0; padding: 12px 14px; border: 1px solid #b4533a; border-radius: 2px; background: #fbeee9; color: #7a2d1c; font-size: .92rem; line-height: 1.5; outline: none; }
+.dark .form-error { background: #2a1712; color: #f3c9bc; border-color: #b4533a; }

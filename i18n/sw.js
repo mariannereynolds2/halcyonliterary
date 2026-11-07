@@ -420,5 +420,6 @@ HL_I18N("sw", {
 "441":"Hadithi ya kusisimua yenye taharuki",
 "442":"Hadithi ya kusisimua kuhusu tabianchi",
 "443":"Asante kwa kuwasiliana na Halcyon Literary House. Tumepokea ombi lako la ushauri, na mmoja wa timu yetu atakujibu ndani ya siku mbili za kazi. Ukitaka kuongeza chochote, tuandikie kupitia hello@halcyonliterary.com.",
-"444":"Asante kwa kuomba Ramani ya Ukuaji kwa Waandishi Huru. Unaweza kuipakua hapa: https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf. Ukiwa tayari kuzungumza kuhusu kitabu chako, omba ushauri kupitia https://halcyonliterary.com/contact.html."
+"444":"Asante kwa kuomba Ramani ya Ukuaji kwa Waandishi Huru. Unaweza kuipakua hapa: https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf. Ukiwa tayari kuzungumza kuhusu kitabu chako, omba ushauri kupitia https://halcyonliterary.com/contact.html.",
+"445":"Ujumbe wako haukuweza kutumwa. Tafadhali jaribu tena baada ya muda mfupi, au tuandikie moja kwa moja kupitia hello@halcyonliterary.com."
 });

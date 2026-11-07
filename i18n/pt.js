@@ -420,5 +420,6 @@ HL_I18N("pt", {
 "441":"Thriller de suspense",
 "442":"Thriller climático",
 "443":"Obrigado por entrar em contato com a Halcyon Literary House. Recebemos a sua solicitação de consulta e um membro da nossa equipe responderá em até dois dias úteis. Se quiser acrescentar algo, escreva para hello@halcyonliterary.com.",
-"444":"Obrigado por solicitar O Roteiro de Crescimento para Autores Independentes. Você pode baixá-lo aqui: https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf. Quando quiser conversar sobre o seu livro, solicite uma consulta em https://halcyonliterary.com/contact.html."
+"444":"Obrigado por solicitar O Roteiro de Crescimento para Autores Independentes. Você pode baixá-lo aqui: https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf. Quando quiser conversar sobre o seu livro, solicite uma consulta em https://halcyonliterary.com/contact.html.",
+"445":"Não foi possível enviar a sua mensagem. Tente novamente dentro de instantes ou escreva-nos diretamente para hello@halcyonliterary.com."
 });

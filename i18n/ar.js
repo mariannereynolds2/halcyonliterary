@@ -420,5 +420,6 @@ HL_I18N("ar", {
 "441":"رواية تشويق",
 "442":"تشويق مناخي",
 "443":"شكرًا لتواصلك مع Halcyon Literary House. وصلنا طلب الاستشارة الخاص بك، وسيرد عليك أحد أعضاء فريقنا خلال يومي عمل. إذا أردت إضافة أي شيء، راسلنا على hello@halcyonliterary.com.",
-"444":"شكرًا لطلبك خريطة النمو للمؤلفين المستقلين. يمكنك تنزيلها من هنا: https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf. وعندما تكون مستعدًا للحديث عن كتابك، اطلب استشارة عبر https://halcyonliterary.com/contact.html."
+"444":"شكرًا لطلبك خريطة النمو للمؤلفين المستقلين. يمكنك تنزيلها من هنا: https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf. وعندما تكون مستعدًا للحديث عن كتابك، اطلب استشارة عبر https://halcyonliterary.com/contact.html.",
+"445":"تعذّر إرسال رسالتك. يُرجى المحاولة مرة أخرى بعد قليل، أو مراسلتنا مباشرة على hello@halcyonliterary.com."
 });

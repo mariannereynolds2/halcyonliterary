@@ -420,5 +420,6 @@ HL_I18N("de", {
 "441":"Spannungsthriller",
 "442":"Klima-Thriller",
 "443":"Vielen Dank, dass Sie Halcyon Literary House kontaktiert haben. Wir haben Ihre Beratungsanfrage erhalten, und ein Mitglied unseres Teams antwortet Ihnen innerhalb von zwei Werktagen. Wenn Sie etwas ergänzen möchten, schreiben Sie uns an hello@halcyonliterary.com.",
-"444":"Vielen Dank für Ihr Interesse an der Wachstums-Roadmap für unabhängige Autoren. Sie können sie hier herunterladen: https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf. Wenn Sie über Ihr Buch sprechen möchten, fordern Sie eine Beratung an unter https://halcyonliterary.com/contact.html."
+"444":"Vielen Dank für Ihr Interesse an der Wachstums-Roadmap für unabhängige Autoren. Sie können sie hier herunterladen: https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf. Wenn Sie über Ihr Buch sprechen möchten, fordern Sie eine Beratung an unter https://halcyonliterary.com/contact.html.",
+"445":"Ihre Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es gleich noch einmal oder schreiben Sie uns direkt an hello@halcyonliterary.com."
 });

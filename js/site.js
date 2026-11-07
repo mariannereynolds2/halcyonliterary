@@ -323,6 +323,8 @@ function HL_I18N(lang, table) { window.HL_DICT[lang] = table; }
         var focusMe = card.querySelector(".form-done h3");
         if (focusMe) { focusMe.setAttribute("tabindex", "-1"); focusMe.focus(); }
       }
+      var errBox = form.querySelector(".form-error");
+      var isRoadmap = !!card.querySelector("[data-roadmap-link]");
       form.addEventListener("submit", function (ev) {
         waiting = true;
         // preview copies have no form address: show the thank-you state only
@@ -332,8 +334,26 @@ function HL_I18N(lang, table) { window.HL_DICT[lang] = table; }
         var lf = form.querySelector("[data-lang-field]");
         if (lf) HL_LANGS.forEach(function (l) { if (l[0] === lang) lf.value = l[1] + " (" + l[0] + ")"; });
         var b = form.querySelector('button[type="submit"]');
+        var label = b ? b.textContent : "";
         if (b) { b.disabled = true; b.textContent = b.getAttribute("data-sending") || "Sending…"; }
-        setTimeout(done, 4000);
+        if (errBox) errBox.hidden = true;
+        if (!window.fetch || !window.FormData) { setTimeout(done, 4000); return; } // old browsers: normal post into the hidden frame
+        ev.preventDefault();
+        // FormSubmit's AJAX address answers with {success:"true"} only once the message is accepted for delivery
+        var url = form.getAttribute("action").replace("formsubmit.co/", "formsubmit.co/ajax/");
+        fetch(url, { method: "POST", headers: { Accept: "application/json" }, body: new FormData(form) })
+          .then(function (r) { return r.json().catch(function () { return {}; }); })
+          .then(function (data) {
+            if (String(data.success) === "true") { done(); return; }
+            throw new Error(data.message || "not accepted");
+          })
+          .catch(function (err) {
+            if (window.console) console.warn("Form not sent:", err && err.message);
+            if (isRoadmap) { done(); return; } // never withhold the guide from a reader
+            waiting = false;
+            if (b) { b.disabled = false; b.textContent = label; }
+            if (errBox) { errBox.hidden = false; errBox.setAttribute("tabindex", "-1"); errBox.focus(); }
+          });
       });
       if (frame) frame.addEventListener("load", done);
     });

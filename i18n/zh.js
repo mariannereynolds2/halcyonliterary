@@ -420,5 +420,6 @@ HL_I18N("zh", {
 "441":"悬疑惊悚小说",
 "442":"气候惊悚小说",
 "443":"感谢您联系 Halcyon Literary House。我们已收到您的咨询请求，团队成员将在两个工作日内回复您。如需补充任何信息，请发送邮件至 hello@halcyonliterary.com。",
-"444":"感谢您索取《独立作者成长路线图》。您可以在此下载：https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf 。当您准备好谈谈您的书时，请在 https://halcyonliterary.com/contact.html 预约咨询。"
+"444":"感谢您索取《独立作者成长路线图》。您可以在此下载：https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf 。当您准备好谈谈您的书时，请在 https://halcyonliterary.com/contact.html 预约咨询。",
+"445":"您的信息未能发送。请稍后再试，或直接发送邮件至 hello@halcyonliterary.com。"
 });
