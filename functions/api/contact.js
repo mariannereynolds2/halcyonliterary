@@ -6,7 +6,7 @@
  *   RESEND_API_KEY   required  your Resend API key (add it as a Secret)
  *   TO_EMAIL         optional  where enquiries go   (default hello@halcyonliterary.com)
  *   FROM_EMAIL       optional  sender, on a domain verified in Resend
- *                              (default "Halcyon Literary House <hello@halcyonliterary.com>")
+ *                              (default "Halcyon Literary House <hello@support.halcyonliterary.com>")
  */
 
 const SITE = "https://halcyonliterary.com";
@@ -198,7 +198,7 @@ export async function onRequestPost({ request, env }) {
   }
 
   const to = env.TO_EMAIL || "hello@halcyonliterary.com";
-  const from = env.FROM_EMAIL || "Halcyon Literary House <hello@halcyonliterary.com>";
+  const from = env.FROM_EMAIL || "Halcyon Literary House <hello@support.halcyonliterary.com>";
   const page = request.headers.get("Referer") || SITE;
 
   try {
@@ -235,7 +235,7 @@ export async function onRequestGet({ env }) {
     const k = String(env.RESEND_API_KEY);
     lines.push("2. RESEND_API_KEY found: YES (" + k.length + " characters)");
     if (!k.startsWith("re_")) lines.push("   Warning: Resend keys normally start with re_. Check that the whole key was pasted.");
-    const from = env.FROM_EMAIL || "Halcyon Literary House <hello@halcyonliterary.com>";
+    const from = env.FROM_EMAIL || "Halcyon Literary House <hello@support.halcyonliterary.com>";
     const fromDomain = (from.match(/@([^>\s]+)/) || [])[1] || "";
     lines.push("3. Sending from: " + from);
     try {

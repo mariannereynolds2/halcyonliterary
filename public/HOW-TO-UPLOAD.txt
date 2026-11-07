@@ -101,7 +101,7 @@ FORMS  (sent with Resend)
     3. In Cloudflare Pages > your project > Settings > Variables and Secrets,
        add a Secret named RESEND_API_KEY with that key, then redeploy.
     Optional variables: TO_EMAIL (default hello@halcyonliterary.com) and
-    FROM_EMAIL (default Halcyon Literary House <hello@halcyonliterary.com>).
+    FROM_EMAIL (default Halcyon Literary House <hello@support.halcyonliterary.com>).
 
 
 GOOGLE AND SHARING
