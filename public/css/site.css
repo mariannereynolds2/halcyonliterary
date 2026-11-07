@@ -100,7 +100,8 @@ p { margin: 0 0 1em; }
 .nav { display: flex; align-items: center; gap: 2px; margin-left: auto; }
 .nav a { color: var(--on-dark); text-decoration: none; font-size: .95rem; padding: 8px 11px; border-radius: 999px; white-space: nowrap; }
 .nav a:hover { background: rgba(255,255,255,.08); color: var(--on-dark); }
-.nav a[aria-current="page"] { color: var(--amber); }
+.nav a[aria-current="page"]:not(.btn) { color: var(--amber); }
+.nav a.btn-primary[aria-current="page"] { color: var(--ink); box-shadow: 0 0 0 1px var(--amber), 0 0 0 4px rgba(201,169,110,.25); }
 .nav .btn { padding: 11px 18px; margin-left: 10px; font-size: .9rem; }
 .nav .btn-primary, .nav .btn-primary:hover { color: var(--ink); background: var(--amber); }
 
