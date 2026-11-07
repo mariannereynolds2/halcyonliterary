@@ -2,6 +2,8 @@ HALCYON LITERARY HOUSE: NEW WEBSITE
 ====================================
 
 WHAT'S IN THIS FOLDER
+  (On GitHub, the website files are in the public folder and the form sender
+   is in functions/api/contact.js.)
   index.html            Home page
   services.html         Services (Edition, Signal, Launch, Circle, Estate, Press)
   how-it-works.html     Process
@@ -82,22 +84,24 @@ LANGUAGES
   This matters most for Yoruba, Swahili and Hindi.
 
 
-FORMS  (one step needed after upload!)
-  Both forms (consultation and roadmap) now send to hello@halcyonliterary.com
-  through FormSubmit.
-  - Each message shows the author's name, email, book, stage, goals, which form
-    they used and the language they were reading the site in.
+FORMS  (sent with Resend)
+  Both forms (consultation and roadmap) are sent by a small Cloudflare function
+  (functions/api/contact.js) through your Resend account.
+  - You receive each message at hello@halcyonliterary.com with exactly what the
+    author wrote: name, email, book, stage, what they tried, their goal, the
+    language they read the site in, and the page they sent it from.
   - Press Reply in your inbox and your answer goes straight to the author.
-  - The author automatically receives a confirmation email in their language.
-    Roadmap requests also receive the download link by email.
-  - The thank-you message only appears once FormSubmit confirms it accepted
-    the message. If sending fails, the visitor sees a clear message asking them
-    to try again or email hello@halcyonliterary.com directly, so no enquiry is
-    silently lost.
-  The FIRST time someone submits a form, FormSubmit sends an activation email
-  to hello@halcyonliterary.com. Open it and click "Activate Form". Until you do,
-  messages are not delivered. Best: submit a test request yourself right after
-  uploading, then activate.
+  - The author receives a confirmation email in their language. Roadmap
+    requests also get the download button.
+  - The thank-you message only appears once Resend has accepted the email. If
+    sending fails, the visitor is asked to try again or email you directly.
+  One-time setup:
+    1. In Resend, add and verify the domain halcyonliterary.com.
+    2. In Resend, create an API key (Sending access).
+    3. In Cloudflare Pages > your project > Settings > Variables and Secrets,
+       add a Secret named RESEND_API_KEY with that key, then redeploy.
+    Optional variables: TO_EMAIL (default hello@halcyonliterary.com) and
+    FROM_EMAIL (default Halcyon Literary House <hello@halcyonliterary.com>).
 
 
 GOOGLE AND SHARING

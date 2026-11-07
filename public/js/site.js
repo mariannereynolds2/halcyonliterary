@@ -309,53 +309,47 @@ function HL_I18N(lang, table) { window.HL_DICT[lang] = table; }
       show(0);
     });
 
-    /* ---------- Forms (sent by FormSubmit to your inbox) ---------- */
+    /* ---------- Forms (sent with Resend by /api/contact to your inbox) ---------- */
     document.querySelectorAll("form[data-hl-form]").forEach(function (form) {
-      var frame = document.querySelector('iframe[name="' + form.getAttribute("target") + '"]');
       var card = form.closest(".form-card");
-      var waiting = false;
+      var errBox = form.querySelector(".form-error");
+      var isRoadmap = !!card.querySelector("[data-roadmap-link]");
+      var st = form.querySelector("[data-started]");
+      if (st) st.value = String(Date.now());
+      var lf = form.querySelector("[data-lang-field]");
+      if (lf) lf.value = lang;
       function done() {
-        if (!waiting) return;
-        waiting = false;
         card.classList.add("sent");
         var dl = card.querySelector("[data-roadmap-link]");
         if (dl) dl.setAttribute("href", HALCYON.roadmapPdf);
         var focusMe = card.querySelector(".form-done h3");
         if (focusMe) { focusMe.setAttribute("tabindex", "-1"); focusMe.focus(); }
       }
-      var errBox = form.querySelector(".form-error");
-      var isRoadmap = !!card.querySelector("[data-roadmap-link]");
+      function failed(b, label, why) {
+        if (window.console) console.warn("Form not sent:", why);
+        if (isRoadmap) { done(); return; } // never withhold the guide from a reader
+        if (b) { b.disabled = false; b.textContent = label; }
+        if (errBox) { errBox.hidden = false; errBox.setAttribute("tabindex", "-1"); errBox.focus(); }
+      }
+      // a visitor without JavaScript is sent back with ?sent=1 or ?error=1
+      var qs = location.search;
+      if (/[?&]sent=1/.test(qs) && card === document.querySelector(".form-card")) done();
+      if (/[?&]error=1/.test(qs) && errBox && !isRoadmap) errBox.hidden = false;
       form.addEventListener("submit", function (ev) {
-        waiting = true;
         // preview copies have no form address: show the thank-you state only
         if (!form.getAttribute("action")) { ev.preventDefault(); done(); return; }
-        // the confirmation email goes out in the language the visitor is reading
-        form.querySelectorAll("[data-say]").forEach(function (f) { f.value = say(f.getAttribute("data-say")); });
-        var lf = form.querySelector("[data-lang-field]");
-        if (lf) HL_LANGS.forEach(function (l) { if (l[0] === lang) lf.value = l[1] + " (" + l[0] + ")"; });
+        if (!window.fetch || !window.FormData) return; // very old browsers: ordinary post
+        ev.preventDefault();
+        if (lf) lf.value = lang;
         var b = form.querySelector('button[type="submit"]');
         var label = b ? b.textContent : "";
         if (b) { b.disabled = true; b.textContent = b.getAttribute("data-sending") || "Sending…"; }
         if (errBox) errBox.hidden = true;
-        if (!window.fetch || !window.FormData) { setTimeout(done, 4000); return; } // old browsers: normal post into the hidden frame
-        ev.preventDefault();
-        // FormSubmit's AJAX address answers with {success:"true"} only once the message is accepted for delivery
-        var url = form.getAttribute("action").replace("formsubmit.co/", "formsubmit.co/ajax/");
-        fetch(url, { method: "POST", headers: { Accept: "application/json" }, body: new FormData(form) })
-          .then(function (r) { return r.json().catch(function () { return {}; }); })
-          .then(function (data) {
-            if (String(data.success) === "true") { done(); return; }
-            throw new Error(data.message || "not accepted");
-          })
-          .catch(function (err) {
-            if (window.console) console.warn("Form not sent:", err && err.message);
-            if (isRoadmap) { done(); return; } // never withhold the guide from a reader
-            waiting = false;
-            if (b) { b.disabled = false; b.textContent = label; }
-            if (errBox) { errBox.hidden = false; errBox.setAttribute("tabindex", "-1"); errBox.focus(); }
-          });
+        fetch(form.getAttribute("action"), { method: "POST", headers: { Accept: "application/json" }, body: new FormData(form) })
+          .then(function (r) { return r.json().catch(function () { return { ok: false, message: "HTTP " + r.status }; }); })
+          .then(function (data) { if (data && data.ok) done(); else failed(b, label, data && data.message); })
+          .catch(function (err) { failed(b, label, err && err.message); });
       });
-      if (frame) frame.addEventListener("load", done);
     });
 
     /* footer year */

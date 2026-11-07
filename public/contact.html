@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The Indie Author Growth Roadmap | Halcyon Literary House</title>
-<meta name="description" content="Receive the complimentary 22-page Indie Author Growth Roadmap for independent authors.">
-<link rel="canonical" href="https://halcyonliterary.com/roadmap.html">
+<title>Private Consultation | Halcyon Literary House</title>
+<meta name="description" content="Request a private consultation with Halcyon Literary House about your book.">
+<link rel="canonical" href="https://halcyonliterary.com/contact.html">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="theme-color" content="#0b0a09">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Halcyon Literary House">
-<meta property="og:title" content="The Indie Author Growth Roadmap | Halcyon Literary House">
-<meta property="og:description" content="Receive the complimentary 22-page Indie Author Growth Roadmap for independent authors.">
-<meta property="og:url" content="https://halcyonliterary.com/roadmap.html">
+<meta property="og:title" content="Private Consultation | Halcyon Literary House">
+<meta property="og:description" content="Request a private consultation with Halcyon Literary House about your book.">
+<meta property="og:url" content="https://halcyonliterary.com/contact.html">
 <meta property="og:image" content="https://halcyonliterary.com/assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -39,7 +39,7 @@
         <select id="lang-pick-m" data-lang-picker translate="no"></select>
       </div>
       <a href="index.html#about">The house</a><a href="services.html">Services</a><a href="how-it-works.html">Process</a><a href="titles-authors.html">Authors</a><a href="team.html">Team</a><a href="author-stories.html">Reviews</a>
-      <a class="btn btn-primary" href="contact.html">Request a consultation</a>
+      <a class="btn btn-primary" href="contact.html" aria-current="page">Request a consultation</a>
     </nav>
     <div class="lang">
       <label for="lang-pick">Language</label>
@@ -53,47 +53,44 @@
 
 <section class="page-head dark">
   <div class="wrap">
-    <h1>The Indie Author Growth Roadmap</h1>
-    <p class="lede">A complimentary 22-page field guide to finding the right next move for your book.</p>
+    <h1>Private consultation</h1>
+    <p class="lede">Tell us about your book. We will reply with the clearest next step.</p>
   </div>
 </section>
 
 <section class="section band">
   <div class="wrap split top">
     <div>
-      <h2>Inside the roadmap</h2>
-      <ul class="checks">
-        <li>Your publishing foundation</li>
-        <li>Your position in the market</li>
-        <li>Your path to readers</li>
-        <li>Building lasting reader relationships</li>
-        <li>A 90-day plan</li>
-        <li>A scorecard, worksheets and answers to common questions</li>
-        <li>Lessons from other authors</li>
+      <h2>Where is your book today, and where do you want it to go?</h2>
+      <p class="lede">You don’t need to choose a service. Describe the book, its stage and the result that matters to you. We will read every word personally and reply within two business days.</p>
+      <ul class="contact-lines">
+        <li><a href="mailto:hello@halcyonliterary.com" translate="no">hello@halcyonliterary.com</a></li>
       </ul>
-      <p class="form-note" style="margin-top:20px">Reads well on phone, tablet and computer. If your browser opens the PDF instead of saving it, use the download icon in the viewer.</p>
     </div>
     <div class="form-card">
-      <form class="form-fields" data-hl-form action="https://formsubmit.co/hello@halcyonliterary.com" method="POST" target="roadmap-frame">
-        <input type="hidden" name="_subject" value="Roadmap request">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_autoresponse" value="Thank you for requesting The Indie Author Growth Roadmap. You can download it here: https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf. When you are ready to talk about your book, request a consultation at https://halcyonliterary.com/contact.html." data-say="Thank you for requesting The Indie Author Growth Roadmap. You can download it here: https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf. When you are ready to talk about your book, request a consultation at https://halcyonliterary.com/contact.html.">
-        <input type="hidden" name="Language they read the site in" value="English" data-lang-field>
-        <input type="hidden" name="Form" value="Roadmap request">
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <div class="field"><label for="rm-name">Your name</label><input id="rm-name" type="text" name="Name" autocomplete="name" required></div>
-        <div class="field"><label for="rm-email">Email address</label><input id="rm-email" type="email" name="email" autocomplete="email" required></div>
-        <button class="btn btn-primary" type="submit" data-sending="Preparing your roadmap…">Receive the roadmap</button>
-        <p class="form-note">By continuing, you agree to receive emails about this guide and related author support. You can unsubscribe at any time.</p>
-      </form>
-      <div class="form-done" aria-live="polite">
-        <h3>Your roadmap is ready.</h3>
-        <p>Download it now and keep it on any device.</p>
-        <a class="btn btn-primary" data-roadmap-link href="#" download>Download the roadmap (PDF)</a>
-      </div>
-      <iframe name="roadmap-frame" title="Form sending" hidden></iframe>
+  <form class="form-fields" data-hl-form action="/api/contact" method="POST">
+    <input type="hidden" name="lang" value="en" data-lang-field>
+    <input type="hidden" name="started" value="" data-started>
+    <input type="hidden" name="form" value="consultation">
+    <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="company_website" tabindex="-1" autocomplete="off"></label></div>
+    <div class="form-row">
+      <div class="field"><label for="brief-contact-name">Your name</label><input id="brief-contact-name" type="text" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="brief-contact-email">Email address</label><input id="brief-contact-email" type="email" name="email" autocomplete="email" required></div>
     </div>
+    <div class="field"><label for="brief-contact-book">Book title and genre</label><input id="brief-contact-book" type="text" name="book" required></div>
+    <div class="field"><label for="brief-contact-stage">Where is your book today?</label><select id="brief-contact-stage" name="stage" required><option value="Writing or editing">Writing or editing</option><option value="Preparing to publish">Preparing to publish</option><option value="Published, but hard to discover">Published, but hard to discover</option><option value="Planning a launch or relaunch">Planning a launch or relaunch</option><option value="Building long-term growth">Building long-term growth</option></select></div>
+    <div class="field"><label for="brief-contact-tried">What have you tried so far? <span class="optional">(optional)</span></label><textarea id="brief-contact-tried" name="tried"></textarea></div>
+    <div class="field"><label for="brief-contact-goal">What would success look like for this book?</label><textarea id="brief-contact-goal" name="goal" required></textarea></div>
+    <button class="btn btn-primary" type="submit" data-sending="Sending your request…">Request a consultation</button>
+    <p class="form-error" role="alert" hidden>Your message could not be sent. Please try again in a moment, or write to us directly at hello@halcyonliterary.com.</p>
+    <p class="form-note">Every request is read by our team. We reply within two business days.</p>
+  </form>
+  <div class="form-done" aria-live="polite">
+    <h3>Thank you. Your request is with us.</h3>
+    <p>A member of our team will reply within two business days.</p>
+    <p>If your request is urgent, or to make sure our reply does not land in spam, write to us at <a href="mailto:hello@halcyonliterary.com" translate="no">hello@halcyonliterary.com</a>.</p>
+  </div>
+</div>
   </div>
 </section></main>
 <footer class="site-footer">
