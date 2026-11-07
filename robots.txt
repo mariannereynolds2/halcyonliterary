@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://halcyonliterary.com/sitemap.xml

@@ -1,0 +1,110 @@
+HALCYON LITERARY HOUSE: NEW WEBSITE
+====================================
+
+WHAT'S IN THIS FOLDER
+  index.html            Home page
+  services.html         Services (Edition, Signal, Launch, Circle, Estate, Press)
+  how-it-works.html     Process
+  titles-authors.html   Our authors
+  team.html             Team (with full bios)
+  author-stories.html   Reviews
+  contact.html          Private consultation form
+  roadmap.html          The Indie Author Growth Roadmap
+  case-studies.html     Case studies (Callista Arden, Kit Rose, Christina Rozelle)
+  faq.html              Frequently asked questions
+  legal.html            Privacy and terms
+  sitemap.xml           List of pages for Google
+  robots.txt            Tells search engines they may read the site
+  css/site.css          All the styling
+  js/site.js            Menu, team bios, review slider, forms, language switcher
+  i18n/                 The translations (one file per language)
+
+The page names are the same as on your current site, so any old links people
+have saved will still work.
+
+
+HOW TO UPLOAD (Hostinger or similar)
+  1. Log in to your hosting and open File Manager, then the public_html folder.
+  2. FIRST, download a backup: select everything in public_html, compress it
+     to a zip and download it. Keep that zip somewhere safe (and on GitHub!).
+  3. DO NOT delete the existing "assets" folder on the server. The bookshelf
+     photo, the 5 collaborator photos and the roadmap PDF live there.
+  4. Upload everything from this folder into public_html (including the css,
+     js, i18n and assets folders). When asked, allow it to replace files and
+     MERGE the assets folder, so the new covers and team photos are added next
+     to what is already there.
+  5. Open halcyonliterary.com and refresh (Ctrl+F5) to see the new design.
+
+
+IMAGES
+  The site looks for images in the "assets" folder, exactly where your current
+  site keeps them:
+    Included in this zip (new):
+      assets/logo.svg        your original logo (dark, for light backgrounds)
+      assets/logo-light.svg  ivory and gold version used on the dark header/footer
+      assets/favicon.svg     browser-tab icon made from the logo mark
+      assets/og-image.jpg    preview image shown when the link is shared
+      assets/books/...       the 6 book covers
+      assets/team/...        the 8 core team photos (including Adegbite's new photo)
+    Already on your server (kept from the old site):
+      assets/editorial-bookshelf.png
+      assets/team/karen.jpg, diana.png, tattie.jpg, eileen.png, elena.png
+  If an image is ever missing from the server, the page automatically loads it
+  from the current halcyonliterary.com address instead.
+
+  You can preview the site on your own computer before uploading: just
+  double-click index.html. Images not in this zip load from your live site.
+
+
+LANGUAGES
+  The whole site is translated into 11 languages, built in (no Google needed):
+  Spanish, French, German, Portuguese, Italian, Arabic, Chinese, Japanese,
+  Hindi, Swahili and Yoruba.
+  - The site picks the language by the visitor's COUNTRY. Someone opening it in
+    Spain sees Spanish, in France French, in Brazil Portuguese, in Japan
+    Japanese, in Egypt Arabic, in the USA or UK English, and so on.
+    The country is looked up once (free GeoJS service) and remembered for 30 days.
+  - Countries with several languages (Nigeria, India, Kenya, Canada,
+    Switzerland, Belgium, South Africa, Singapore...) follow the visitor's own
+    phone or computer language instead. So a Nigerian visitor whose phone is
+    set to Yoruba sees Yoruba; everyone else in Nigeria sees English.
+  - If the country can't be found, the visitor's phone/computer language is
+    used, then English.
+  - The globe menu (inside the Menu on phones) lets anyone switch language, or
+    back to English. Their own choice always wins and is remembered.
+  - Arabic reads right to left.
+  - Names, book titles, the company name and the six service names (Edition,
+    Signal, Launch, Circle, Estate, Press) stay in English on purpose.
+  - Tip: you can share a page in a set language by adding ?lang= to the link,
+    for example  halcyonliterary.com/?lang=fr  or  halcyonliterary.com/?lang=yo
+
+  Before relying on a language for clients, have a native speaker read it.
+  This matters most for Yoruba, Swahili and Hindi.
+
+
+FORMS  (one step needed after upload!)
+  Both forms (consultation and roadmap) now send to hello@halcyonliterary.com
+  through FormSubmit.
+  - Each message shows the author's name, email, book, stage, goals, which form
+    they used and the language they were reading the site in.
+  - Press Reply in your inbox and your answer goes straight to the author.
+  - The author automatically receives a confirmation email in their language.
+    Roadmap requests also receive the download link by email.
+  The FIRST time someone submits a form, FormSubmit sends an activation email
+  to hello@halcyonliterary.com. Open it and click "Activate Form". Until you do,
+  messages are not delivered. Best: submit a test request yourself right after
+  uploading, then activate.
+
+
+GOOGLE AND SHARING
+  - After upload, add the site to Google Search Console
+    (search.google.com/search-console) and submit:
+    https://halcyonliterary.com/sitemap.xml
+  - When the link is shared on WhatsApp, Facebook, LinkedIn or X, it shows
+    assets/og-image.jpg: your logo, headline and three covers.
+
+
+THE ROADMAP PDF
+  The download button points to:  assets/indie-author-growth-roadmap.pdf
+  Put your PDF in the assets folder with exactly that name, or open js/site.js
+  and change the "roadmapPdf" line near the top to match your file's name.
