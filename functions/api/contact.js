@@ -222,6 +222,40 @@ export async function onRequestPost({ request, env }) {
   return reply(request, true, 200, "ok");
 }
 
-export function onRequestGet() {
-  return new Response("This address accepts form submissions only.", { status: 405, headers: { Allow: "POST" } });
+// Status check: open /api/contact in a browser to see whether email is set up.
+export async function onRequestGet({ env }) {
+  const lines = ["Halcyon contact form: status check", ""];
+  lines.push("1. Form sender is running: YES");
+  if (!env.RESEND_API_KEY) {
+    lines.push("2. RESEND_API_KEY found: NO");
+    lines.push("");
+    lines.push("Fix: Cloudflare > Workers & Pages > halcyonliterary > Settings > Variables and Secrets.");
+    lines.push("Add RESEND_API_KEY for the Production environment, then Deployments > Retry deployment.");
+  } else {
+    const k = String(env.RESEND_API_KEY);
+    lines.push("2. RESEND_API_KEY found: YES (" + k.length + " characters)");
+    if (!k.startsWith("re_")) lines.push("   Warning: Resend keys normally start with re_. Check that the whole key was pasted.");
+    const from = env.FROM_EMAIL || "Halcyon Literary House <hello@halcyonliterary.com>";
+    const fromDomain = (from.match(/@([^>\s]+)/) || [])[1] || "";
+    lines.push("3. Sending from: " + from);
+    try {
+      const r = await fetch("https://api.resend.com/domains", { headers: { Authorization: "Bearer " + k } });
+      const body = await r.json().catch(() => ({}));
+      if (r.ok && Array.isArray(body.data)) {
+        const d = body.data.find((x) => x.name === fromDomain);
+        if (!d) lines.push("4. Domain " + fromDomain + " in Resend: NOT ADDED. Fix: Resend > Domains > Add domain.");
+        else lines.push("4. Domain " + fromDomain + " in Resend: " + String(d.status).toUpperCase() + (d.status === "verified" ? "" : "  (must be VERIFIED before emails can be sent)"));
+      } else if (r.status === 401 || r.status === 403) {
+        const msg = body.message || body.name || "";
+        if (/restricted/i.test(msg) || /restricted/i.test(body.name || "")) lines.push("4. Key is valid (sending-only key, so the domain status cannot be read here). Check Resend > Domains shows " + fromDomain + " as Verified.");
+        else lines.push("4. Resend rejected the key: " + msg + "  Fix: create a new API key in Resend and paste it again.");
+      } else {
+        lines.push("4. Resend answered " + r.status + ": " + JSON.stringify(body).slice(0, 200));
+      }
+    } catch (e) {
+      lines.push("4. Could not reach Resend: " + e.message);
+    }
+  }
+  lines.push("", "Sending to: " + (env.TO_EMAIL || "hello@halcyonliterary.com"));
+  return new Response(lines.join("\n"), { headers: { "Content-Type": "text/plain; charset=utf-8", "Cache-Control": "no-store" } });
 }
