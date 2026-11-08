@@ -27,11 +27,17 @@ var HL_FONT_NAMES = { ar: "Noto Naskh Arabic", zh: "Noto Serif SC", ja: "Noto Se
 var HL_IMAGE_FALLBACK = "https://halcyonliterary.com/";
 document.addEventListener("error", function (ev) {
   var img = ev.target;
-  if (!img || img.tagName !== "IMG" || img.getAttribute("data-fallback-tried")) return;
+  if (!img || img.tagName !== "IMG") return;
   var src = img.getAttribute("src") || "";
-  if (src.indexOf("assets/") !== 0) return;
-  img.setAttribute("data-fallback-tried", "1");
-  img.src = HL_IMAGE_FALLBACK + src;
+  var onLiveSite = /halcyonliterary\.(com|pages\.dev)$/.test(location.hostname);
+  // previews opened from a computer can borrow images from the live site
+  if (!onLiveSite && src.indexOf("assets/") === 0 && !img.getAttribute("data-fallback-tried")) {
+    img.setAttribute("data-fallback-tried", "1");
+    img.src = HL_IMAGE_FALLBACK + src;
+    return;
+  }
+  // never show a broken image icon
+  img.style.visibility = "hidden";
 }, true);
 
 /* translation files call these */

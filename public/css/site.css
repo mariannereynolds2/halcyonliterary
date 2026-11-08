@@ -581,3 +581,15 @@ html.i18n-loading body { visibility: hidden; }
 .form-error { margin: 4px 0 0; padding: 12px 14px; border: 1px solid #b4533a; border-radius: 2px; background: #fbeee9; color: #7a2d1c; font-size: .92rem; line-height: 1.5; outline: none; }
 .dark .form-error { background: #2a1712; color: #f3c9bc; border-color: #b4533a; }
 .hp { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+/* initials badge for team members without a photo yet */
+.monogram { display: flex; align-items: center; justify-content: center; width: 100%; aspect-ratio: 4 / 5; border-radius: var(--r-md); background: radial-gradient(120% 90% at 30% 20%, #26211b 0%, #0b0a09 70%); color: #c9a96e; font-family: "Cormorant Garamond", Georgia, serif; font-size: clamp(2.6rem, 6vw, 4rem); letter-spacing: .06em; border: 1px solid rgba(201,169,110,.35); }
+.bio-inner .monogram { height: 100%; min-height: 280px; aspect-ratio: auto; border-radius: 0; }
+@media (max-width: 640px) { .bio-inner .monogram { height: 240px; min-height: 0; } }
+
+/* fanned book covers in place of the old bookshelf photo */
+.cover-fan { position: relative; aspect-ratio: 4 / 3.4; border-radius: var(--r-md); background: radial-gradient(110% 90% at 50% 30%, #26211b 0%, #0b0a09 75%); overflow: hidden; }
+.split-img.cover-fan img { position: absolute; top: 50%; left: 50%; width: 34%; aspect-ratio: 2 / 3; height: auto; object-fit: cover; border-radius: 3px; box-shadow: 0 18px 40px rgba(0,0,0,.55); }
+.cover-fan img:nth-child(1) { transform: translate(-118%, -48%) rotate(-9deg); }
+.cover-fan img:nth-child(2) { transform: translate(-50%, -54%); z-index: 2; }
+.cover-fan img:nth-child(3) { transform: translate(18%, -48%) rotate(9deg); }
