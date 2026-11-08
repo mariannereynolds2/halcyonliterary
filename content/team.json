@@ -1,0 +1,110 @@
+{
+  "core": [
+    {
+      "id": "jennifer-lopez",
+      "photo": "/assets/team/jennifer-lopez.jpg",
+      "name": "Jennifer Lopez",
+      "role": "Founder & CEO, Book Marketing Strategist",
+      "summary": "Decides, with you, what your book needs and in what order.",
+      "bio": "Jennifer Lopez founded Halcyon Literary House with a simple belief: writing and publishing a book should not leave an author wondering how to find the people who would genuinely want to read it.\n\nWith 10 years of experience in book marketing, including six years in publishing, Jennifer has spent much of her professional life working with independent and self-published authors. Her background includes Amazon advertising, book positioning, listing optimization, reader acquisition, and building stronger author platforms.\n\nOver the years, she came to recognize a recurring challenge. Authors were investing deeply in their books, yet many lacked the strategic support needed to navigate the increasingly competitive world of book marketing. Jennifer wanted to build a company that could approach those challenges with greater care, clarity, and individual attention.\n\nThat ambition became Halcyon Literary House.\n\nToday, as Founder and CEO, Jennifer guides the company's vision while continuing to bring her marketing expertise to the work. She believes effective promotion begins with understanding the book, the audience it was written for, and the author's goals, rather than offering every writer the same solution.\n\nHer purpose is to help authors make confident, informed decisions about their publishing journeys and give their books a stronger opportunity to find the readers they deserve."
+    },
+    {
+      "id": "kate",
+      "photo": "/assets/team/kate.jpg",
+      "name": "Kate Ferguson",
+      "role": "Author Relations & Outreach Lead",
+      "summary": "Your first conversation with the house, and your guide to what we offer.",
+      "bio": "Kate researches authors and starts conversations where Halcyon may be able to help. She takes time to understand the book, the author’s goals and any concerns about working with a service provider. Kate explains the relevant support, answers questions about scope and next steps, and brings Jennifer or another specialist into the conversation when needed. She also helps with proposals and the handover, so authors know who they will be working with."
+    },
+    {
+      "id": "amanda",
+      "photo": "/assets/team/amanda.jpg",
+      "name": "Amanda K.",
+      "role": "Book Production & Launch Preparation",
+      "summary": "Keeps every step before publication on schedule.",
+      "bio": "Amanda helps authors prepare for publication and organize the work leading up to a launch. She reviews what is ready, what still needs attention and how the book will be presented to readers. Working with Jennifer and the production specialists, she helps coordinate file preparation, book-page information and launch tasks. Her role gives authors a clearer schedule and someone to talk to when they are unsure what needs to happen next."
+    },
+    {
+      "id": "jennifer-winters",
+      "photo": "/assets/team/jennifer.jpg",
+      "name": "Jennifer O. Winters",
+      "role": "Author Branding & Creative Design",
+      "summary": "Designs covers and visual identities that belong together.",
+      "bio": "Jennifer O. Winters helps authors with book covers and the visual materials around a release. She looks at the genre, the intended readers and the author’s ideas before developing a design. Her work can include author branding, promotional graphics, newsletter visuals and media-kit layouts. She works with the author through the agreed revisions, helping the cover and supporting materials feel consistent wherever readers encounter the book."
+    },
+    {
+      "id": "adegbite",
+      "photo": "/assets/team/adegbite.jpg",
+      "name": "Adegbite Samuel",
+      "role": "Author Websites & Email Systems",
+      "summary": "Builds the websites and newsletters that keep readers close.",
+      "bio": "Adegbite handles the technology behind an author’s website and email list. He builds pages, connects signup forms and sets up the emails readers receive after subscribing. He also helps with landing pages, integrations and tracking. Authors work with Adegbite when they need a new system or help fixing an existing one. His role includes checking how the pieces work together and explaining how the author can use them after handover."
+    },
+    {
+      "id": "sarah",
+      "photo": "/assets/team/sarah.jpg",
+      "name": "Sarah Kat",
+      "role": "Reader Communities & Campaign Coordination",
+      "summary": "Places your book with the book clubs and communities that fit it.",
+      "bio": "Sarah researches book clubs, reading groups and other communities where a book may be a good fit. She prepares introductions, follows up with organizers and helps coordinate discussions or author Q&As when a group agrees to take part. She also helps organize suitable newsletter placements as part of an agreed campaign. Sarah keeps authors informed about what has been proposed, which opportunities are confirmed and what they need to prepare."
+    },
+    {
+      "id": "vivienne",
+      "photo": "/assets/team/vivienne.jpg",
+      "name": "Vivienne Ashcroft",
+      "role": "PR & Author Visibility",
+      "summary": "Shapes your story for podcasts, hosts and the press.",
+      "bio": "Vivienne helps authors explain why their book or experience would interest a particular audience. She researches podcasts and media outlets, develops pitch angles and prepares materials such as author biographies, media kits and interview notes. She handles outreach and follow-up within the agreed scope. When an opportunity is confirmed, she helps the author understand the format and prepare for the conversation, keeping the message relevant to the host and their audience."
+    },
+    {
+      "id": "mike",
+      "photo": "/assets/team/mike.jpg",
+      "name": "Mike Gordon",
+      "role": "Video & Launch Content",
+      "summary": "Films trailers and short videos with the mood of your book.",
+      "bio": "Mike creates book trailers, launch videos and shorter clips for social platforms. He works from the book’s story, mood and the materials available, then plans the imagery, sound and pace. He can also work with Tattie on scripts and short-form ideas. Authors work with Mike to turn an agreed concept into video assets, review the edits and receive versions suited to the platforms they plan to use."
+    }
+  ],
+  "collaborators": [
+    {
+      "id": "karen",
+      "photo": "/assets/team/karen.jpg",
+      "name": "Karen Williams",
+      "role": "Nonfiction Author Strategy",
+      "summary": "Sharpens the reader promise of nonfiction books.",
+      "bio": "Karen supports nonfiction projects, helping authors clarify who the book is for and what it offers the reader. She works with Jennifer on the book’s message and its relationship to the author’s wider work, business or expertise."
+    },
+    {
+      "id": "diana",
+      "photo": "/assets/team/diana.png",
+      "name": "Diana L.",
+      "role": "Book Cover Design",
+      "summary": "Brings additional cover craft to selected projects.",
+      "bio": "Diana contributes cover-design expertise when a project needs her particular approach. She works with the author and creative lead on cover concepts, revisions and the agreed ebook or print formats, keeping the design connected to the book’s genre and story."
+    },
+    {
+      "id": "tattie",
+      "photo": "/assets/team/tattie.jpg",
+      "name": "Tattie Davies",
+      "role": "BookTok & Short-form Content",
+      "summary": "Writes the hooks, scripts and captions for short video.",
+      "bio": "Tattie helps turn a book’s characters, themes and reader appeal into short-form content ideas. She develops hooks, scripts and captions for BookTok and other social platforms, working with Mike when a project also needs video production."
+    },
+    {
+      "id": "eileen",
+      "photo": "/assets/team/eileen.jpg",
+      "name": "Eileen Thornton",
+      "role": "Goodreads & Book-page Support",
+      "summary": "Keeps author profiles and book pages exact.",
+      "bio": "Eileen supports Goodreads author profiles and book-page information. She checks details, researches relevant discovery opportunities and helps authors understand what needs attention. Her work is coordinated with the wider project so book-page tasks support the agreed plan."
+    },
+    {
+      "id": "elena",
+      "photo": "/assets/team/elena.png",
+      "name": "Elena Hart",
+      "role": "Amazon Advertising",
+      "summary": "Builds and manages Amazon advertising with clear reporting.",
+      "bio": "Elena joins projects that need Amazon advertising expertise. She reviews the book’s presentation, builds agreed campaigns and monitors spending and performance. She helps authors understand the figures and the decisions behind campaign changes, with advertising budgets kept clear from service fees."
+    }
+  ]
+}

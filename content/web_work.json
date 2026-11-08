@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "name": "Raj Agrawal",
+      "url": "https://raj.halcyonliterary.com",
+      "covers": [
+        "/assets/books/not-for-sale.jpg",
+        "/assets/books/reversal.jpg",
+        "/assets/books/control.jpg"
+      ],
+      "description": "A home for the Not For Sale! trilogy: the books, the author’s story and a mailing list that keeps readers close."
+    }
+  ]
+}

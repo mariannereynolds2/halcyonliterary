@@ -1,0 +1,26 @@
+{
+  "title": "Privacy and terms",
+  "intro": "How we handle your information, and the terms of our work together.",
+  "sections": [
+    {
+      "heading": "Privacy",
+      "body": "We collect the information you send through our forms, such as your name, email address and book details, to reply to your enquiry and provide our services. We do not sell personal information.\n\nTo show this site in your language, we look up your country from your IP address the first time you visit, using the GeoJS service. Only the country is kept, on your own device, for 30 days."
+    },
+    {
+      "heading": "Service terms",
+      "body": "Scope, timing, fees, revision limits, author responsibilities and deliverables are confirmed in writing before paid work begins.\n\nResults are not guaranteed. Publishing and marketing outcomes depend on the book, the market, timing, platforms and the author’s own efforts."
+    },
+    {
+      "heading": "Refunds",
+      "body": "Refund eligibility depends on the signed project agreement, the work already completed and any third-party costs already committed. Approved third-party expenses are generally non-refundable."
+    },
+    {
+      "heading": "Intellectual property",
+      "body": "Authors keep the rights to their manuscripts and pre-existing materials. Ownership and usage rights for commissioned work are set out in the project agreement."
+    },
+    {
+      "heading": "Contact",
+      "body": "Questions about privacy or these terms can be sent to hello@halcyonliterary.com."
+    }
+  ]
+}

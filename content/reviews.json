@@ -1,0 +1,52 @@
+{
+  "reviews": [
+    {
+      "quote": "As a new author, I had no idea how book marketing worked. I started with about 70 sales, mostly from friends and family. The team explained their Email Marketing & Newsletter Promotion service clearly, so I decided to give it a try. After the first campaign, my book reached 560 reviews. I reordered the service, and it eventually reached 1,800 reviews. I'm genuinely impressed with the results and the support throughout the process. I highly recommend them to authors looking to reach a much larger audience.",
+      "name": "Callista Arden, Author",
+      "service": "Email Marketing & Newsletter Promotion",
+      "short": "As a new author, I had no idea how book marketing worked. I started with about 70 sales, mostly from friends and family. After the first campaign, my book reached 560 reviews. I reordered the service, and it eventually reached 1,800 reviews."
+    },
+    {
+      "quote": "I ordered the Reader Community Connection service from Halcyon Literary House, and I absolutely loved the experience. As an author, connecting with readers is one of the things I enjoy most. It was wonderful to see people discussing my book, sharing their thoughts, and giving me the opportunity to ask questions and interact with them directly. It felt genuine and engaging.",
+      "name": "A.M. Justice, Author",
+      "service": "Reader Community Connection",
+      "short": "It was wonderful to see people discussing my book, sharing their thoughts, and giving me the opportunity to ask questions and interact with them directly. It felt genuine and engaging."
+    },
+    {
+      "quote": "Before working with Halcyon Literary House, I wasn't sure where my book was appearing on Amazon. I ordered their Amazon Metadata Optimization service, and I'm really happy with the results. After my metadata was optimized, I started seeing my book appear among #20 historical romance books on Amazon. It's exciting to finally see my book positioned where the right readers can discover it.",
+      "name": "John, Author",
+      "service": "Amazon Metadata Optimization",
+      "short": "After my metadata was optimized, I started seeing my book appear among #20 historical romance books on Amazon. It's exciting to finally see my book positioned where the right readers can discover it."
+    },
+    {
+      "quote": "Halcyon did another exceptional job helping me prepare my latest children's book, Brother Ick and Colby Adopt Brother Puppies, for Amazon KDP. They were incredibly patient, detail-oriented, and committed to making sure every page was print-ready. From adjusting bleeds and margins to perfecting the cover layout and ensuring everything met KDP's specifications, every revision was handled quickly and professionally.",
+      "name": "aquabelt1",
+      "service": "Children's Book Formatting + KDP",
+      "short": "They were incredibly patient, detail-oriented, and committed to making sure every page was print-ready. Every revision was handled quickly and professionally."
+    },
+    {
+      "quote": "Halcyon was professional, responsive, patient, and easy to communicate with throughout the entire process. They took the time to review my manuscript, listened to my ideas, and made the revisions I requested. The final book is clean, polished, and professionally formatted for publication. I also appreciated their quick turnaround and willingness to make sure I was satisfied.",
+      "name": "mhubb",
+      "service": "Professional Formatting + Design",
+      "short": "They reviewed my manuscript, listened to my ideas, and made the revisions I requested. The final book is clean, polished, and professionally formatted for publication."
+    },
+    {
+      "quote": "Halcyon did an amazing job bringing my book to print. They had to revise both the cover and the story to meet requirements and was exceptional in doing so. I highly recommend their services and appreciate the hard work in bringing the book to print.",
+      "name": "Terry Gunn",
+      "service": "Print Production",
+      "short": null
+    },
+    {
+      "quote": "Amanda did an excellent job. She brought thoughtful research, strong strategic insight, and a clear understanding of book marketing to the project. Her recommendations gave me valuable direction as I prepare for my book launch. I truly appreciated the care and expertise she brought to the work.",
+      "name": "arleneantoinett",
+      "service": "Launch Strategy with Amanda K.",
+      "short": "She brought thoughtful research, strong strategic insight, and a clear understanding of book marketing. Her recommendations gave me valuable direction as I prepare for my book launch."
+    },
+    {
+      "quote": "Will use her service again.",
+      "name": "mujahidhawk",
+      "service": "Worked with Amanda K.",
+      "short": null
+    }
+  ]
+}

@@ -1,16 +1,23 @@
 # Halcyon Literary House: halcyonliterary.com
 
-Static website plus one Cloudflare Pages Function.
+The website is generated from the content files in `content/`, which you edit at
+**halcyonliterary.com/admin**. Every save in the admin is committed here, and
+Cloudflare rebuilds and publishes the site within a minute or two.
 
-- `public/`: the website (HTML, CSS, JS, translations, images, roadmap PDF)
+## Folders
+- `content/`: everything editable (team, books, reviews, case studies, services, FAQ, legal, extra pages)
+- `assets/`: images (book covers in `assets/books`, team photos in `assets/team`, other uploads in `assets/uploads`)
+- `admin/`: the admin editor (Sveltia CMS) and its settings
+- `i18n/`: the hand-checked translations (12 languages)
 - `functions/api/contact.js`: sends the contact and roadmap forms through Resend
+- `public/`: the generated website (rebuilt automatically, do not edit by hand)
 
 ## Cloudflare Pages settings
-- Framework preset: None
-- Build command: (leave empty)
+- Build command: `bash build.sh`
 - Build output directory: `public`
-- Secret: `RESEND_API_KEY` = your Resend API key
-- Optional variables: `TO_EMAIL`, `FROM_EMAIL`
+- Secret: `RESEND_API_KEY`
 
-The sending domain (halcyonliterary.com) must be verified in Resend.
-See `public/HOW-TO-UPLOAD.txt` for the full guide.
+## Translations
+Text that already existed keeps its hand-checked translations. Anything new or changed
+through the admin is translated automatically during the build (free MyMemory service).
+If the free daily limit is reached, the text shows in English until the next publish.

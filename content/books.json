@@ -1,0 +1,76 @@
+{
+  "books": [
+    {
+      "cover": "/assets/books/kenya-safari.jpg",
+      "title": "Kenya Safari: A Guide for the First-Time Visitor",
+      "author": "Jim Walker",
+      "genre": "Travel and wildlife photography",
+      "series": "",
+      "buy_link": "https://kenyasafariadventure.com/"
+    },
+    {
+      "cover": "/assets/books/cindy-where-are-you.jpg",
+      "title": "Cindy, Where Are You?",
+      "author": "Roger Rapel",
+      "genre": "Crime and detective thriller",
+      "series": "",
+      "buy_link": "https://www.amazon.com/dp/B0GBGNX1YK"
+    },
+    {
+      "cover": "/assets/books/wrecked-by-you.jpg",
+      "title": "Wrecked By You",
+      "author": "Kate Sweden",
+      "genre": "Romantic comedy",
+      "series": "Wilder Horizons #1",
+      "buy_link": "https://www.amazon.com/dp/B0F2GRPBMX"
+    },
+    {
+      "cover": "/assets/books/thresholds.jpg",
+      "title": "Thresholds",
+      "author": "Gerry van den Brekel",
+      "genre": "Memoir and spiritual reflection",
+      "series": "",
+      "buy_link": "https://www.amazon.com/dp/B0G3LJ7QS3"
+    },
+    {
+      "cover": "/assets/books/vampire-island-of-nightfall.jpg",
+      "title": "Vampire Island of Nightfall",
+      "author": "Jade Christy",
+      "genre": "Vampire romantasy",
+      "series": "Vampire Island Chronicles #1",
+      "buy_link": "https://www.amazon.com/dp/B0GPR7G5R9"
+    },
+    {
+      "cover": "/assets/books/the-immortals-lie.jpg",
+      "title": "The Immortal's Lie",
+      "author": "Jade Christy",
+      "genre": "Urban vampire romantasy",
+      "series": "The Immortal's Lie #1",
+      "buy_link": "https://www.amazon.com/s?k=The+Immortal%27s+Lie+Jade+Christy"
+    },
+    {
+      "cover": "/assets/books/not-for-sale.jpg",
+      "title": "Not For Sale!",
+      "author": "Raj Agrawal",
+      "genre": "Aviation thriller",
+      "series": "Not For Sale! Trilogy #1",
+      "buy_link": "https://www.amazon.com/dp/1734081015"
+    },
+    {
+      "cover": "/assets/books/reversal.jpg",
+      "title": "Reversal!",
+      "author": "Raj Agrawal",
+      "genre": "Suspense thriller",
+      "series": "Not For Sale! Trilogy #2",
+      "buy_link": "https://www.amazon.com/dp/B0CK9QPCKT"
+    },
+    {
+      "cover": "/assets/books/control.jpg",
+      "title": "Control!",
+      "author": "Raj Agrawal",
+      "genre": "Climate thriller",
+      "series": "Not For Sale! Trilogy #3",
+      "buy_link": "https://www.amazon.com/dp/B0HGQMYDHM"
+    }
+  ]
+}

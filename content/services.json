@@ -1,0 +1,111 @@
+{
+  "services": [
+    {
+      "id": "publish",
+      "name": "Edition",
+      "plain": "Book production",
+      "headline": "From manuscript to a book that looks ready to be bought.",
+      "intro": "A finished draft is not yet a finished book. Edition prepares your interior, cover and files for print and ebook to retailer standard, and guides every technical step of publishing, so your book arrives looking as if it belongs on the front table.",
+      "includes": [
+        "Manuscript review",
+        "Interior design and formatting",
+        "Ebook conversion",
+        "Paperback and hardcover files",
+        "Cover design",
+        "Cover resizing and revisions",
+        "Bleed, margin and KDP compliance",
+        "Publishing setup and upload guidance"
+      ],
+      "close": "From document to edition."
+    },
+    {
+      "id": "position",
+      "name": "Signal",
+      "plain": "Positioning and discoverability",
+      "headline": "Make the right reader understand your book in seconds.",
+      "intro": "No amount of promotion can rescue a book that sends the wrong signal. Signal aligns your cover, description, categories, keywords and author story, so your book announces its genre, its promise and its reader before a single dollar is spent on reaching them.",
+      "includes": [
+        "Amazon metadata audit",
+        "Keyword research",
+        "Category strategy",
+        "Book description",
+        "Author positioning",
+        "Genre signal review",
+        "Goodreads setup and strategy",
+        "Series positioning",
+        "Relaunch diagnosis"
+      ],
+      "close": "Clear. Findable. Chosen."
+    },
+    {
+      "id": "discover",
+      "name": "Launch",
+      "plain": "Book marketing",
+      "headline": "A campaign composed around one book and its real readers.",
+      "intro": "Launch designs the moment your book meets its audience. Strategy, newsletters, advertising and short-form video are built around your book’s strongest hook and run by one team, so every channel works toward the same result.",
+      "includes": [
+        "Launch and relaunch strategy",
+        "Email promotion",
+        "Newsletter placements",
+        "Amazon advertising",
+        "BookTok promotion",
+        "Short-form campaigns",
+        "Ongoing campaign management"
+      ],
+      "close": "Attention is rented. Readers are earned."
+    },
+    {
+      "id": "circle",
+      "name": "Circle",
+      "plain": "Reader connections",
+      "headline": "Readers who talk about your book, with you in the room.",
+      "intro": "Circle places your book with book clubs, reading groups and reader communities chosen for their fit, then arranges the discussions and author Q&As. Attention fades after launch week. A circle of readers who know your work stays with you.",
+      "includes": [
+        "Book club outreach",
+        "Reading-group placements",
+        "Reader community campaigns",
+        "Author Q&A sessions",
+        "Discussion coordination",
+        "Audience relationship strategy"
+      ],
+      "close": "Conversations, not impressions."
+    },
+    {
+      "id": "systems",
+      "name": "Estate",
+      "plain": "Author platform",
+      "headline": "The platform you own, long after launch week.",
+      "intro": "Your website, newsletter and visual identity are an asset that grows with every book you publish. Estate designs and builds that asset, so every campaign has somewhere to send readers and every reader has a reason to stay.",
+      "includes": [
+        "Author brand direction",
+        "Visual identity",
+        "Author website",
+        "Landing pages",
+        "Newsletter setup",
+        "Email automations",
+        "Reader lead magnets",
+        "Integrations and tracking",
+        "Ongoing support"
+      ],
+      "close": "Own the audience. Keep the connection."
+    },
+    {
+      "id": "authority",
+      "name": "Press",
+      "plain": "PR and authority",
+      "headline": "A story that hosts, media and readers want to share.",
+      "intro": "Publicity works when your story, your expertise and your book meet a timely angle. Press shapes that message, prepares the materials and leads outreach to podcasts, media and video, so you arrive at every interview prepared.",
+      "includes": [
+        "PR positioning",
+        "Media angles",
+        "Press kit",
+        "Podcast outreach",
+        "Interview preparation",
+        "Author biography",
+        "Press release support",
+        "Book trailer and launch video"
+      ],
+      "close": "A stronger story travels farther."
+    }
+  ]
+}

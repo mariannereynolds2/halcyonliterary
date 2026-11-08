@@ -1,0 +1,227 @@
+# Halcyon Literary House: admin editor settings
+# Every "Save" is committed to GitHub; Cloudflare then rebuilds and publishes the site.
+backend:
+  name: github
+  repo: mariannereynolds2/halcyonliterary
+  branch: main
+  commit_messages:
+    create: "Add {{collection}} “{{slug}}” (admin)"
+    update: "Update {{collection}} “{{slug}}” (admin)"
+    delete: "Remove {{collection}} “{{slug}}” (admin)"
+    uploadMedia: "Upload “{{path}}” (admin)"
+    deleteMedia: "Delete “{{path}}” (admin)"
+
+site_url: https://halcyonliterary.com
+display_url: https://halcyonliterary.com
+logo:
+  src: /assets/logo.svg
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: team
+    label: Team
+    icon: groups
+    files:
+      - name: team
+        label: Team members
+        file: content/team.json
+        format: json
+        fields:
+          - label: Core team
+            name: core
+            widget: list
+            summary: "{{name}}, {{role}}"
+            fields: &person
+              - { label: Name, name: name, widget: string }
+              - { label: Role, name: role, widget: string }
+              - label: Photo
+                name: photo
+                widget: image
+                required: false
+                media_folder: /assets/team
+                public_folder: /assets/team
+                hint: "Portrait photo. If empty, gold initials are shown instead."
+              - { label: Short line on the card, name: summary, widget: text }
+              - { label: Full profile, name: bio, widget: text, hint: "Leave an empty line between paragraphs." }
+              - { label: Web address id, name: id, widget: string, required: false, hint: "Optional. Lowercase with dashes, e.g. jane-doe. Filled automatically from the name if empty." }
+          - label: Specialist collaborators
+            name: collaborators
+            widget: list
+            summary: "{{name}}, {{role}}"
+            fields: *person
+
+  - name: books
+    label: Authors and books
+    icon: menu_book
+    files:
+      - name: books
+        label: Books
+        file: content/books.json
+        format: json
+        fields:
+          - label: Books
+            name: books
+            widget: list
+            summary: "{{title}} by {{author}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Author, name: author, widget: string }
+              - label: Cover
+                name: cover
+                widget: image
+                media_folder: /assets/books
+                public_folder: /assets/books
+              - { label: Genre, name: genre, widget: string, required: false }
+              - { label: Series, name: series, widget: string, required: false, hint: "e.g. Wilder Horizons #1" }
+              - { label: Buy link, name: buy_link, widget: string, required: false, hint: "Amazon or shop page" }
+      - name: web_work
+        label: Author websites we built
+        file: content/web_work.json
+        format: json
+        fields:
+          - label: Projects
+            name: projects
+            widget: list
+            summary: "{{name}}"
+            fields:
+              - { label: Author, name: name, widget: string }
+              - { label: Website address, name: url, widget: string }
+              - label: Covers shown
+                name: covers
+                widget: list
+                field: { label: Cover, name: cover, widget: image, media_folder: /assets/books, public_folder: /assets/books }
+              - { label: Description, name: description, widget: text }
+
+  - name: reviews
+    label: Reviews
+    icon: reviews
+    files:
+      - name: reviews
+        label: Author reviews
+        file: content/reviews.json
+        format: json
+        fields:
+          - label: Reviews
+            name: reviews
+            widget: list
+            summary: "{{name}}"
+            fields:
+              - { label: Full review, name: quote, widget: text, hint: "Paste it exactly as the author wrote it." }
+              - { label: Name and role, name: name, widget: string, hint: "e.g. Callista Arden, Author" }
+              - { label: Service used, name: service, widget: string, required: false }
+              - { label: Short version for the home page, name: short, widget: text, required: false, hint: "Leave empty to keep this review off the home page." }
+
+  - name: case_studies
+    label: Case studies
+    icon: insights
+    files:
+      - name: case_studies
+        label: Case studies
+        file: content/case_studies.json
+        format: json
+        fields:
+          - label: Case studies
+            name: case_studies
+            widget: list
+            summary: "{{author}}"
+            fields:
+              - { label: Author, name: author, widget: string }
+              - { label: Service name, name: service, widget: string, hint: "Edition, Signal, Launch, Circle, Estate or Press" }
+              - { label: What we did, name: plain, widget: string }
+              - { label: Headline number, name: number, widget: string, hint: "e.g. 1,800" }
+              - { label: Number label, name: number_label, widget: string, hint: "e.g. reviews in two months" }
+              - { label: Starting point, name: start, widget: text }
+              - { label: The work, name: work, widget: text }
+              - { label: The result, name: result, widget: text }
+              - { label: Web address id, name: id, widget: string, required: false }
+
+  - name: services
+    label: Services
+    icon: workspace_premium
+    files:
+      - name: services
+        label: Services
+        file: content/services.json
+        format: json
+        fields:
+          - label: Services
+            name: services
+            widget: list
+            summary: "{{name}}: {{plain}}"
+            fields:
+              - { label: Name, name: name, widget: string }
+              - { label: Plain description, name: plain, widget: string }
+              - { label: Headline, name: headline, widget: string }
+              - { label: Introduction, name: intro, widget: text }
+              - { label: What is included, name: includes, widget: list, field: { label: Item, name: item, widget: string } }
+              - { label: Closing line, name: close, widget: string }
+              - { label: Web address id, name: id, widget: string, hint: "Lowercase, no spaces, e.g. launch" }
+
+  - name: faq
+    label: FAQ
+    icon: help
+    files:
+      - name: faq
+        label: Questions and answers
+        file: content/faq.json
+        format: json
+        fields:
+          - label: Questions
+            name: faq
+            widget: list
+            summary: "{{question}}"
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: text }
+
+  - name: pages
+    label: Extra pages
+    label_singular: Page
+    icon: article
+    folder: content/pages
+    format: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    fields:
+      - { label: Page title, name: title, widget: string }
+      - { label: Web address, name: slug, widget: string, hint: "Lowercase with dashes, e.g. workshops. The page will be halcyonliterary.com/workshops" }
+      - { label: Introduction, name: intro, widget: text, required: false }
+      - { label: Main image, name: image, widget: image, required: false }
+      - { label: Image description, name: image_alt, widget: string, required: false, hint: "Describe the image for screen readers" }
+      - { label: Page text, name: body, widget: markdown, hint: "Keep each sentence plain (no bold or links in the middle of a sentence) so it translates well." }
+      - { label: Button text, name: button_text, widget: string, required: false }
+      - { label: Button link, name: button_link, widget: string, required: false, hint: "e.g. contact.html or a full web address" }
+      - { label: Show in footer, name: show_in_footer, widget: boolean, default: true }
+      - { label: Published, name: published, widget: boolean, default: true, hint: "Turn off to hide the page without deleting it" }
+      - { label: Search engine title, name: seo_title, widget: string, required: false }
+      - { label: Search engine description, name: seo_description, widget: text, required: false }
+
+  - name: settings
+    label: Settings
+    icon: settings
+    files:
+      - name: legal
+        label: Privacy and terms
+        file: content/legal.json
+        format: json
+        fields:
+          - { label: Page title, name: title, widget: string }
+          - { label: Introduction, name: intro, widget: text }
+          - label: Sections
+            name: sections
+            widget: list
+            summary: "{{heading}}"
+            fields:
+              - { label: Heading, name: heading, widget: string }
+              - { label: Text, name: body, widget: text, hint: "Leave an empty line between paragraphs. Email addresses and web links become clickable." }
+      - name: site
+        label: General
+        file: content/site.json
+        format: json
+        fields:
+          - { label: Brand line, name: brand_line, widget: string }
+          - { label: Main button label, name: cta_label, widget: string }
+          - { label: Book stages in the forms, name: stages, widget: list, field: { label: Stage, name: stage, widget: string } }

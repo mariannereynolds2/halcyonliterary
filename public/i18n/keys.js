@@ -445,5 +445,8 @@ window.HL_KEYS = [
 "Climate thriller",
 "Thank you for contacting Halcyon Literary House. We have received your consultation request, and a member of our team will reply within two business days. If you would like to add anything, write to us at hello@halcyonliterary.com.",
 "Thank you for requesting The Indie Author Growth Roadmap. You can download it here: https://halcyonliterary.com/assets/indie-author-growth-roadmap.pdf. When you are ready to talk about your book, request a consultation at https://halcyonliterary.com/contact.html.",
-"Your message could not be sent. Please try again in a moment, or write to us directly at hello@halcyonliterary.com."
+"Your message could not be sent. Please try again in a moment, or write to us directly at hello@halcyonliterary.com.",
+"Books published by Halcyon authors",
+"Leave this empty",
+"Privacy and terms | Halcyon Literary House"
 ];
