@@ -1,37 +1,59 @@
 {
-  "case_studies": [
-    {
-      "id": "callista-arden",
-      "author": "Callista Arden",
-      "service": "Launch",
-      "plain": "Email and newsletter promotion",
-      "number": "1,800",
-      "number_label": "reviews, from a start of about 70 sales",
-      "start": "A new author with about 70 sales, mostly from friends and family, and no experience of book marketing.",
-      "work": "We placed the book in email promotions and reader newsletters suited to its audience. When the first campaign worked, we ran it again.",
-      "result": "The book reached 560 reviews after the first campaign, and 1,800 reviews after the second."
-    },
-    {
-      "id": "kit-rose",
-      "author": "Kit Rose",
-      "service": "Circle",
-      "plain": "Book club campaign",
-      "number": "200+",
-      "number_label": "reviews in two months",
-      "start": "A published book with fewer than 30 reviews.",
-      "work": "We found book clubs and reading groups suited to the book, introduced it to their organisers and coordinated the discussions.",
-      "result": "The book went from under 30 reviews to more than 200 within two months."
-    },
-    {
-      "id": "christina-rozelle",
-      "author": "Christina Rozelle",
-      "service": "Signal",
-      "plain": "Amazon audit and Goodreads promotion",
-      "number": "90+",
-      "number_label": "sales in one month",
-      "start": "A published book that was not reaching the readers it was written for.",
-      "work": "We audited and fixed the book’s Amazon listing, then promoted it to readers on Goodreads.",
-      "result": "The book sold more than 90 copies in a single month."
-    }
-  ]
+ "case_studies": [
+  {
+   "id": "callista-arden",
+   "author": "Callista Arden",
+   "service": "Launch",
+   "plain": "Email and newsletter promotion",
+   "number": "1,800",
+   "number_label": "reviews, from a start of about 70 sales",
+   "start": "A new author with about 70 sales, mostly from friends and family, and no experience of book marketing.",
+   "work": "We placed the book in email promotions and reader newsletters suited to its audience. When the first campaign worked, we ran it again.",
+   "result": "The book reached 560 reviews after the first campaign, and 1,800 reviews after the second."
+  },
+  {
+   "id": "kit-rose",
+   "author": "Kit Rose",
+   "service": "Circle",
+   "plain": "Book club campaign",
+   "number": "200+",
+   "number_label": "reviews in two months",
+   "start": "A published book with fewer than 30 reviews.",
+   "work": "We found book clubs and reading groups suited to the book, introduced it to their organisers and coordinated the discussions.",
+   "result": "The book went from under 30 reviews to more than 200 within two months."
+  },
+  {
+   "id": "christina-rozelle",
+   "author": "Christina Rozelle",
+   "service": "Signal",
+   "plain": "Amazon audit and Goodreads promotion",
+   "number": "90+",
+   "number_label": "sales in one month",
+   "start": "A published book that was not reaching the readers it was written for.",
+   "work": "We audited and fixed the book’s Amazon listing, then promoted it to readers on Goodreads.",
+   "result": "The book sold more than 90 copies in a single month."
+  },
+  {
+   "id": "catherine-j-mottier",
+   "author": "Catherine J. Mottier",
+   "service": "Edition and Launch",
+   "plain": "Book formatting, Amazon optimisation and email promotion",
+   "number": "300+",
+   "number_label": "reviews for Bicéphale, up from about 30",
+   "start": "Catherine’s French thriller Bicéphale was already published, but the book still needed work before it could compete. It had about 30 reviews.",
+   "work": "We formatted the book professionally and republished it, optimised its Amazon listing, then ran an early launch email promotion to targeted readers. We also built Catherine’s author website, catherine.halcyonliterary.com.",
+   "result": "Bicéphale grew from about 30 reviews to more than 300, and the book is still finding readers today."
+  },
+  {
+   "id": "veronique-elyotrisky",
+   "author": "Véronique Elyotrisky",
+   "service": "Launch and Estate",
+   "plain": "Targeted reader promotion and an author website",
+   "number": "3",
+   "number_label": "novels, now with a home of their own online",
+   "start": "Véronique, a novelist from Normandy, had three novels with her publisher, Bookélis, a crime novel and a two-volume historical saga, but almost no presence online and nowhere for readers to find her.",
+   "work": "Working alongside her publisher, we brought her books to targeted readers and drove sales through her purchase links. We then built her a professional author website, veronique.halcyonliterary.com, with a page for each book, a shop for signed copies and her book fair dates.",
+   "result": "Her books reached new, targeted readers, and anyone who hears about her novels now has one place to discover all three and order a signed copy directly from her."
+  }
+ ]
 }

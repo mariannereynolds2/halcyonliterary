@@ -448,5 +448,18 @@ window.HL_KEYS = [
 "Your message could not be sent. Please try again in a moment, or write to us directly at hello@halcyonliterary.com.",
 "Books published by Halcyon authors",
 "Leave this empty",
-"Privacy and terms | Halcyon Literary House"
+"Privacy and terms | Halcyon Literary House",
+"A French author site for a thriller writer: her four novels, her award, and every way for readers to find her.",
+"A twelve-page French author site with a shop for signed copies, a page for each novel and her book fair dates.",
+"Bicéphale grew from about 30 reviews to more than 300, and the book is still finding readers today.",
+"Book formatting, Amazon optimisation and email promotion",
+"Catherine’s French thriller Bicéphale was already published, but the book still needed work before it could compete. It had about 30 reviews.",
+"Different books, different problems, and what changed when each was solved in the right order.",
+"Her books reached new, targeted readers, and anyone who hears about her novels now has one place to discover all three and order a signed copy directly from her.",
+"Targeted reader promotion and an author website",
+"Véronique, a novelist from Normandy, had three novels with her publisher, Bookélis, a crime novel and a two-volume historical saga, but almost no presence online and nowhere for readers to find her.",
+"We formatted the book professionally and republished it, optimised its Amazon listing, then ran an early launch email promotion to targeted readers. We also built Catherine’s author website, catherine.halcyonliterary.com.",
+"Working alongside her publisher, we brought her books to targeted readers and drove sales through her purchase links. We then built her a professional author website, veronique.halcyonliterary.com, with a page for each book, a shop for signed copies and her book fair dates.",
+"novels, now with a home of their own online",
+"reviews for Bicéphale, up from about 30"
 ];

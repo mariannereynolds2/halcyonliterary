@@ -1,14 +1,33 @@
 {
-  "projects": [
-    {
-      "name": "Raj Agrawal",
-      "url": "https://raj.halcyonliterary.com",
-      "covers": [
-        "/assets/books/not-for-sale.jpg",
-        "/assets/books/reversal.jpg",
-        "/assets/books/control.jpg"
-      ],
-      "description": "A home for the Not For Sale! trilogy: the books, the author’s story and a mailing list that keeps readers close."
-    }
-  ]
+ "projects": [
+  {
+   "name": "Raj Agrawal",
+   "url": "https://raj.halcyonliterary.com",
+   "covers": [
+    "/assets/books/not-for-sale.jpg",
+    "/assets/books/reversal.jpg",
+    "/assets/books/control.jpg"
+   ],
+   "description": "A home for the Not For Sale! trilogy: the books, the author’s story and a mailing list that keeps readers close."
+  },
+  {
+   "name": "Catherine J. Mottier",
+   "url": "https://catherine.halcyonliterary.com",
+   "covers": [
+    "/assets/books/la-residence-70.jpg",
+    "/assets/books/bicephale.jpg",
+    "/assets/books/l-enfer-est-au-paradis.jpg"
+   ],
+   "description": "A French author site for a thriller writer: her four novels, her award, and every way for readers to find her."
+  },
+  {
+   "name": "Véronique Elyotrisky",
+   "url": "https://veronique.halcyonliterary.com",
+   "covers": [
+    "/assets/books/meurtre-sur-les-rails.jpg",
+    "/assets/books/frederic-et-victoire.jpg"
+   ],
+   "description": "A twelve-page French author site with a shop for signed copies, a page for each novel and her book fair dates."
+  }
+ ]
 }

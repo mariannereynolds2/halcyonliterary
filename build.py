@@ -684,7 +684,7 @@ def case_studies():
   </dl>
 </article>""")
     body = f"""
-{page_head("Case studies", "Three books, three different problems, and what changed when each was solved in the right order.")}
+{page_head("Case studies", "Different books, different problems, and what changed when each was solved in the right order.")}
 <section class="section">
   <div class="wrap cases">
     {"".join(blocks)}
@@ -693,7 +693,7 @@ def case_studies():
 </section>
 {cta("Your book could be the next case study.", "Tell us where it stands and where you want it to go.")}"""
     page("case-studies.html", "Case Studies | Halcyon Literary House",
-         "How Halcyon helped independent authors grow reviews and sales through newsletter promotion, book club campaigns and Amazon audits.", "", body)
+         "How Halcyon helped independent authors grow reviews and sales through book formatting, newsletter promotion, book club campaigns, Amazon optimisation and author websites.", "", body)
 
 def faq():
     items = "".join(f"""<details class="faq-item"><summary>{e(q)}</summary><p>{e(a)}</p></details>""" for q, a in FAQ)
