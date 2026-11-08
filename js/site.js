@@ -102,7 +102,11 @@ function HL_I18N(lang, table) { window.HL_DICT[lang] = table; }
     // Countries with several languages (Nigeria, India, Kenya, Canada, Switzerland, Belgium, South Africa,
     // Singapore and others) follow the visitor's own phone/computer language instead.
   };
-  var GEO_URL = "https://get.geojs.io/v1/ip/country.json";
+  // Countries with several languages: follow the visitor's device language when we have it,
+  // otherwise show French (these are mostly French-speaking markets for us).
+  var MULTI_LANG = { BE: "fr", CH: "fr", LU: "fr", MA: "fr", DZ: "fr", TN: "fr", RW: "fr", MU: "fr", SC: "fr", VU: "fr" };
+  // Our own Cloudflare lookup first (fast, never blocked), then a public service as a backup.
+  var GEO_URLS = ["/api/geo", "https://get.geojs.io/v1/ip/country.json"];
   var GEO_DAYS = 30;
 
   var root = document.documentElement;
@@ -165,6 +169,10 @@ function HL_I18N(lang, table) { window.HL_DICT[lang] = table; }
 
   function langForCountry(cc) {
     cc = String(cc || "").toUpperCase();
+    if (MULTI_LANG[cc]) {
+      var dev = browserLang();
+      return dev !== "en" ? dev : MULTI_LANG[cc];
+    }
     return COUNTRY_LANG[cc] || browserLang();
   }
 
@@ -191,12 +199,16 @@ function HL_I18N(lang, table) { window.HL_DICT[lang] = table; }
       startLang(cc ? langForCountry(cc) : browserLang());
     };
     setTimeout(function () { settle(null); }, 1500);
-    try {
-      fetch(GEO_URL, { cache: "no-store" })
-        .then(function (r) { return r.ok ? r.json() : null; })
-        .then(function (d) { settle(d && d.country ? d.country : null); })
-        .catch(function () { settle(null); });
-    } catch (e) { settle(null); }
+    var tryGeo = function (i) {
+      if (i >= GEO_URLS.length) { settle(null); return; }
+      try {
+        fetch(GEO_URLS[i], { cache: "no-store" })
+          .then(function (r) { return r.ok ? r.json() : null; })
+          .then(function (d) { if (d && d.country && /^[A-Z]{2}$/i.test(d.country) && d.country !== "XX" && d.country !== "T1") settle(d.country); else tryGeo(i + 1); })
+          .catch(function () { tryGeo(i + 1); });
+      } catch (e) { tryGeo(i + 1); }
+    };
+    tryGeo(0);
   }
   setTimeout(reveal, 3000); // the page is never left hidden
 
