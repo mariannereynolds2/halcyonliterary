@@ -593,3 +593,9 @@ html.i18n-loading body { visibility: hidden; }
 .cover-fan img:nth-child(1) { transform: translate(-118%, -48%) rotate(-9deg); }
 .cover-fan img:nth-child(2) { transform: translate(-50%, -54%); z-index: 2; }
 .cover-fan img:nth-child(3) { transform: translate(18%, -48%) rotate(9deg); }
+
+/* Partner badges */
+.partner-badges{display:flex;flex-wrap:wrap;gap:20px;align-items:center;margin-top:28px}
+.partner-badge{display:inline-flex;align-items:center;justify-content:center;padding:18px 28px;background:#fff;border:1px solid rgba(0,0,0,.12);border-radius:12px;transition:box-shadow .2s,transform .2s}
+.partner-badge:hover,.partner-badge:focus-visible{box-shadow:0 6px 18px rgba(0,0,0,.12);transform:translateY(-2px)}
+.partner-badge img{display:block;height:auto;max-width:100%}

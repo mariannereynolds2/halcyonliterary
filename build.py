@@ -407,6 +407,19 @@ def home():
   </div>
 </section>
 
+<section class="section band" id="partners">
+  <div class="wrap">
+    <p class="kicker">Our partners</p>
+    <h2>Proud to partner with PBC Guru.</h2>
+    <p class="lede">Halcyon works with PBC Guru, the managed book club specialists, to bring readers together around good books.</p>
+    <div class="partner-badges">
+      <a class="partner-badge" href="https://www.pbc.guru/" target="_blank" rel="noopener" title="PBC Guru by Perpetual Learning">
+        <img src="assets/partners-pbc-guru.png" alt="PBC Guru by Perpetual Learning" width="260" height="61" loading="lazy">
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="section" style="padding-top:0">
   <div class="wrap">
     <div class="promo">
